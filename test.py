@@ -2,13 +2,15 @@ import handy
 import cv2
 
 # getting video feed from webcam
-cap = cv2.VideoCapture(0)
 
 # capture the hand histogram by placing your hand in the box shown and
 # press 'A' to confirm
 # source is set to inbuilt webcam by default. Pass source=1 to use an
 # external camera.
 hist = handy.capture_histogram(source=0)
+print("[*]Histogram Captured")
+
+cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
