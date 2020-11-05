@@ -1,5 +1,4 @@
 import cv2
-import math
 from Hand import Hand
 
 
